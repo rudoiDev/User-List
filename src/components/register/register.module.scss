@@ -1,0 +1,52 @@
+@import '../../styles/mixins.scss';
+
+.container {
+  @include adaptive-value('width', 1000, 250, 1);
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.212);
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input:focus {
+  box-shadow: 0px 0px 1px 3px #a282cc75 !important;
+}
+.btn {
+  border: 1px solid $violet;
+  background: #8860bd;
+  color: #fff;
+  transition: all 0.2s ease;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 15px;
+  @include adaptive-value('font-size', 16, 14, 1);
+  padding: 10px;
+  border-radius: 5px;
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
+  &:hover {
+    box-shadow: 0px 0px 5px inset #00000075;
+    color: #fff !important;
+  }
+  &:active {
+    box-shadow: 0px 0px 1px 3px #a282cc75 !important;
+    color: #fff !important;
+  }
+}
+strong {
+  padding: 0 !important;
+  @include adaptive-value('font-size', 24, 16, 1);
+}
+.passwordShow {
+  color: rgb(143, 143, 143);
+  cursor: pointer;
+}
