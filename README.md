@@ -22,4 +22,4 @@
 ### 2) `npm run build` - prodaction mode;
 ### 3) `npm start` - development mode.
 
-### Click on the link to see the result -> https://rudoidev.github.io/user_list/dist/index.html#/login
+### Click on the link to see the result -> https://rudoidev.github.io/User-List/dist/#/login
